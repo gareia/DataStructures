@@ -92,6 +92,7 @@ class Graph(object):
         column numbers represent to nodes.
         Store the edge values in each spot,
         and a 0 if no edge exists."""
+		
         max_index = self.get_max_index()
         
         adjacency_matrix = []
@@ -101,11 +102,9 @@ class Graph(object):
             for column in range(max_index+1):
                 
                 row_list.append(self.get_value_from_edge(row, column))
-            
-                
+             
             adjacency_matrix.append(row_list)
-                
-                
+          
         return adjacency_matrix
 
 graph = Graph()
